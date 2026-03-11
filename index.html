@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daya Nathe | Data Analyst Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0f172a;
+color:white;
+font-size:19px;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:#cbd5f5;
+margin-left:25px;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+background:linear-gradient(90deg,#38bdf8,#6366f1);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero h2{
+margin-top:10px;
+font-weight:400;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+padding:12px 25px;
+border-radius:30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+font-weight:600;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+font-size:32px;
+margin:10px;
+color:white;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+/* SECTION */
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:36px;
+}
+
+/* ABOUT */
+
+.about-container{
+display:flex;
+align-items:center;
+gap:60px;
+max-width:1100px;
+margin:auto;
+}
+
+.about-img{
+width:320px;
+height:320px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+}
+
+.highlight{
+color:#38bdf8;
+font-weight:600;
+}
+
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-6px);
+}
+
+.skill img{
+width:40px;
+margin-bottom:10px;
+}
+
+/* PROJECT */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.project-card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+transition:0.3s;
+}
+
+.project-btn{
+margin-top:20px;
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+border-radius:25px;
+text-decoration:none;
+}
+
+/* TIMELINE */
+
+.timeline{
+max-width:800px;
+margin:auto;
+}
+
+.timeline-item{
+background:#1e293b;
+padding:20px;
+margin:15px 0;
+border-radius:8px;
+}
+
+/* CONTACT */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.contact-bottom{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:25px;
+flex-wrap:wrap;
+}
+
+.contact-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+width:260px;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.contact-card i{
+font-size:30px;
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+padding:15px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:8px 12px;
+font-size:16px;
+}
+
+/* HERO */
+
+.hero h1{
+font-size:36px;
+}
+
+.hero h2{
+font-size:20px;
+}
+
+.hero p{
+font-size:16px;
+padding:0 15px;
+}
+
+/* ABOUT */
+
+.about-container{
+flex-direction:column;
+text-align:center;
+gap:30px;
+}
+
+.about-img{
+width:100%;
+max-width:320px;
+height:auto;
+aspect-ratio:1/1;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+}
+
+/* SECTIONS */
+
+.section{
+padding:60px 20px;
+}
+
+/* SKILLS */
+
+.skills{
+grid-template-columns:repeat(2,1fr);
+}
+
+/* PROJECTS */
+
+.projects-grid{
+grid-template-columns:1fr;
+}
+
+/* CONTACT */
+
+.contact-grid{
+grid-template-columns:1fr;
+justify-items:center;
+}
+
+.contact-bottom{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-card{
+width:90%;
+max-width:320px;
+}
+
+}
+
+/* -------- SMALL MOBILE -------- */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.btn{
+padding:10px 18px;
+font-size:14px;
+}
+
+.social a{
+font-size:26px;
+}
+
+.skills{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h3>Daya Nathe</h3>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Daya Dinesh Nathe</h1>
+
+<h2>Data Analyst | BI Analyst</h2>
+
+<p style="max-width:600px;margin-top:20px">
+Transforming raw data into meaningful insights using Python,
+SQL, Excel and Power BI.
+</p>
+
+<div class="buttons">
+
+<a class="btn" href="resume.pdf" download>
+<i class="fa-solid fa-download"></i> Download Resume
+</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/daya-nathe-07ab79239" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/Daya-13" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<img src="profilee.png" class="about-img">
+
+<div>
+<p>
+I am <span class="highlight">Daya Dinesh Nathe</span>, currently pursuing
+<span class="highlight">Master of Computer Applications (MCA)</span> with a strong interest in
+<span class="highlight">Data Analytics and Business Intelligence</span>.
+</p>
+
+<br>
+
+<p>
+I have hands-on experience working with
+<span class="highlight">Python, SQL, Excel, Power BI, Pandas and NumPy</span>
+for data cleaning, exploratory data analysis and dashboard creation.
+</p>
+</div>
+
+</div>
+
+</section>
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+Python
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+SQL
+</div>
+
+<div class="skill">
+<img src="https://img.icons8.com/color/48/microsoft-excel-2019.png">
+Excel
+</div>
+
+<div class="skill">
+<img src="https://img.icons8.com/color/48/power-bi.png">
+Power BI
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+Pandas
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+NumPy
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT -->
+
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Customer Shopping Behaviour Analysis</h3>
+
+<p>
+This project analyzes customer purchasing patterns to identify
+sales trends, popular product categories and customer behavior.
+Data cleaning and exploratory data analysis were performed using
+<strong>Python (Pandas)</strong> while <strong>SQL</strong> queries were
+used to extract insights such as top selling products and revenue trends.
+</p>
+
+<br>
+
+<p>
+An interactive <strong>Power BI dashboard</strong> was developed to
+visualize KPIs including sales trends, category performance and
+customer segmentation which helps businesses understand
+customer behavior and make data-driven decisions.
+</p>
+
+<a class="project-btn"
+href="https://github.com/Daya-13/Data-Analyst__Customer_Shopping_Behaviour"
+target="_blank">
+
+<i class="fa-brands fa-github"></i>
+View Project on GitHub
+
+</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Diwali Sales Analysis</h3>
+
+<p>
+This project analyzes Diwali sales data to understand customer purchasing
+behavior and sales performance during the festive season. The dataset was
+<strong>cleaned and preprocessed using Python (Pandas and NumPy)</strong>
+to prepare it for analysis.
+</p>
+
+<br>
+
+<p>
+Performed <strong>Exploratory Data Analysis (EDA)</strong> to identify
+customer demographics, top product categories and revenue trends.
+The insights help businesses improve marketing strategies and
+inventory planning during festive sales.
+</p>
+<a class="project-btn"
+href="https://github.com/Daya-13/Data-Analysis__Diwali-Sales-Analysis"
+target="_blank">
+
+<i class="fa-brands fa-github"></i>
+View Project on GitHub
+
+</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Data Analytics Intern — CodeC Technologies</h3>
+
+<p>Feb 2026 – Present</p>
+
+<p>
+Performing data cleaning and transformation on real-world datasets,
+conducting exploratory data analysis using Python and SQL, and
+developing interactive Power BI dashboards to track business KPIs.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Junior Data Analyst Intern — YuvaIntern</h3>
+
+<p>Jan 2026 – Feb 2026</p>
+
+<p>
+Worked with advanced Excel functions to clean and structure
+datasets. Built dashboards using Pivot Tables, VLOOKUP and
+INDEX-MATCH to generate analytical reports for business insights.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="section">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>MCA — SNDT University</h3>
+<p>2024 – 2026</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>BBA(CA) — SPPU University</h3>
+<p>2021 – 2024</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<h2>Get in Touch</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto">
+
+I’d like to connect! Whether you have a question,
+want to collaborate, or just say hi — feel free to
+reach out anytime. I’m always open for new opportunities.
+
+</p>
+
+
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<i class="fa-solid fa-envelope"></i>
+<h4>Email</h4>
+<a href="mailto:nathedaya@gmail.com">nathedaya@gmail.com</a>
+</div>
+
+<div class="contact-card">
+<i class="fa-brands fa-linkedin"></i>
+<h4>LinkedIn</h4>
+<a href="https://www.linkedin.com/in/daya-nathe-07ab79239" target="_blank">
+linkedin.com/in/daya-nathe
+</a>
+</div>
+
+<div class="contact-card">
+<i class="fa-brands fa-github"></i>
+<h4>GitHub</h4>
+<a href="https://github.com/Daya-13" target="_blank">
+github.com/Daya-13
+</a>
+</div>
+
+</div>
+
+
+<div class="contact-bottom">
+
+<div class="contact-card">
+<i class="fa-solid fa-phone"></i>
+<h4>Phone</h4>
+<p>9699154304</p>
+</div>
+
+<div class="contact-card">
+<i class="fa-solid fa-location-dot"></i>
+<h4>Location</h4>
+<p>Pune, Maharashtra</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Daya Nathe | Data Analyst Portfolio</p>
+
+</footer>
+
+</body>
+</html>
